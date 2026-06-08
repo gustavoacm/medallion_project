@@ -179,7 +179,7 @@ Applying a quality mindset to data engineering is what separates a robust Medall
 
 ## 👤 Author
 
-**Gustavo** — QA Professional transitioning to Data Engineering
+**Gustavo Alexander Cabrera** — QA Professional transitioning to Data Engineering
 
 [![GitHub](https://img.shields.io/badge/GitHub-gustavoacm-181717?logo=github)](https://github.com/gustavoacm)
 
