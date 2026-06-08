@@ -1,0 +1,20 @@
+# dbt ignores the following files and directories by default. You can add to this list as needed.
+profiles.yml
+target/
+dbt_packages/
+logs/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment variables
+.env

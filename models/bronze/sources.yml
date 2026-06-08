@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: bronze
+    database: medallion_practice
+    schema: bronze
+    tables:
+      - name: sales_bronze
+        description: "Raw sales data loaded from SQL Server"
+        columns:
+          - name: sale_id
+            description: "Unique sale identifier"
+          - name: date
+            description: "Sale date"
+          - name: amount
+            description: "Sale amount"
+          - name: client_id
+            description: "Client identifier"
+          - name: product
+            description: "Product name"
+          - name: status
+            description: "Sale status"

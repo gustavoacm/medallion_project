@@ -1,0 +1,15 @@
+-- models/silver/sales_silver.sql  {#FROM {{ ref('sales_bronze') }}#}
+{{ config(materialized='table') }}
+
+SELECT
+    sale_id,
+    TRY_TO_DATE(date)   AS date,
+    amount,
+    client_id,
+    product,
+    status,
+    load_date
+FROM {{ source('bronze', 'sales_bronze') }}
+WHERE amount        IS NOT NULL
+AND client_id       IS NOT NULL
+AND amount          > 0

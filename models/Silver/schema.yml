@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: sales_silver
+    description: "Clean sales data from bronze layer"
+    columns:
+      - name: sale_id
+        tests:
+          - not_null
+          - unique
+      - name: amount
+        tests:
+          - not_null
+      - name: client_id
+        tests:
+          - not_null
